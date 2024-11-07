@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/dashboard">
+    <fragment
+        android:id="@+id/catalogo"
+        android:name="pe.edu.idat.appborabora.view.fragments.Catalogo"
+        android:label="Catalogo"
+        tools:layout="@layout/fragment_catalogo" />
+    <fragment
+        android:id="@+id/contacto"
+        android:name="pe.edu.idat.appborabora.view.fragments.Contacto"
+        android:label="Contacto"
+        tools:layout="@layout/fragment_contacto" />
+    <fragment
+        android:id="@+id/dashboard"
+        android:name="pe.edu.idat.appborabora.view.fragments.Dashboard"
+        android:label="Dashboard"
+        tools:layout="@layout/fragment_dashboard" />
+    <fragment
+        android:id="@+id/perfil"
+        android:name="pe.edu.idat.appborabora.view.fragments.UserProfile"
+        android:label="Perfil"
+        tools:layout="@layout/fragment_perfil" />
+    <fragment
+        android:id="@+id/detalleHistorialCompra"
+        android:name="pe.edu.idat.appborabora.view.fragments.DetalleHistorialCompra"
+        android:label="Detalle de la Compra"
+        tools:layout="@layout/fragment_detalle_historial_compra" />
+    <fragment
+        android:id="@+id/historialCompra"
+        android:name="pe.edu.idat.appborabora.view.fragments.HistorialCompra"
+        android:label="@string/men_historial_compra"
+        tools:layout="@layout/fragment_historial_compra" />
+    <fragment
+        android:id="@+id/listarProdCategoria"
+        android:name="pe.edu.idat.appborabora.view.fragments.ListarProdCategoria"
+        android:label="Listado de Producto"
+        tools:layout="@layout/fragment_listar_prod_categoria" />
+    <fragment
+        android:id="@+id/detalleProducto"
+        android:name="pe.edu.idat.appborabora.view.fragments.DetalleProducto"
+        android:label="Detalle de Producto"
+        tools:layout="@layout/fragment_detalle_producto"/>
+    <activity
+        android:id="@+id/compra"
+        android:name="pe.edu.idat.appborabora.view.activities.Purchase"
+        android:label="Compra"
+        tools:layout="@layout/activity_purchase" />
+    <fragment
+        android:id="@+id/administrarProductos"
+        android:name="pe.edu.idat.appborabora.view.fragments.AdministrarProductos"
+        android:label="Administrar Productos"
+        tools:layout="@layout/fragment_administrar_productos" />
+    <fragment
+        android:id="@+id/crearProducto"
+        android:name="pe.edu.idat.appborabora.view.fragments.CrearProducto"
+        android:label="Crear Producto"
+        tools:layout="@layout/fragment_crear_producto" />
+    <fragment
+        android:id="@+id/actualizarProducto"
+        android:name="pe.edu.idat.appborabora.view.fragments.ActualizarProducto"
+        android:label="Actualizar Producto"
+        tools:layout="@layout/fragment_actualizar_producto" />
+    <fragment
+        android:id="@+id/eliminarProducto"
+        android:name="pe.edu.idat.appborabora.view.fragments.EliminarProducto"
+        android:label="Eliminar Producto"
+        tools:layout="@layout/fragment_eliminar_producto" />
+    <fragment
+        android:id="@+id/verProductos"
+        android:name="pe.edu.idat.appborabora.view.fragments.VerProductos"
+        android:label="Visualizar Lista de Productos"
+        tools:layout="@layout/fragment_ver_productos" />
+</navigation>
